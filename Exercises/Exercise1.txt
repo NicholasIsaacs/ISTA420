@@ -1,0 +1,44 @@
+.headers on
+
+--Author:Nicholas Isaacs
+--Date:August 7, 2018
+--Name:Dogs.sql
+
+Drop table if exists Dogs;
+
+create table Dogs(
+  IDtag integer,
+  name text,
+  breed text,
+  age integer,
+  TrainingSessionsCompleted integer
+);
+
+insert into Dogs values (45689,'Smokey','German Shepherd',2,78);
+insert into Dogs values (25903,'Lucky','Golden Retriever',7,30);
+insert into Dogs values (36789,'Rex','Rottweiler',4,22);
+insert into Dogs values (49834,'Sophie','Border Collie',12,100);
+
+Select breed from Dogs;
+breed
+German Shepherd
+Golden Retriever
+Rottweiler
+Border Collie
+Select TrainingSessionsCompleted from Dogs where TrainingSessionsCompleted < 50;
+TrainingSessionsCompleted
+30
+22
+Select name from Dogs where TrainingSessionsCompleted < 50;
+name
+Lucky
+Rex
+Select name,age from Dogs where age > 5;
+name|age
+Lucky|7
+Sophie|12
+
+
+
+ 
+

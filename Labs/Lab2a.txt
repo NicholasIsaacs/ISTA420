@@ -1,0 +1,86 @@
+.echo on
+.headers on
+
+-- Name: Nicholas Isaacs
+-- File: TSQL LAB2A
+-- Date: August 14, 2018
+
+-- What are the regions?
+select * from region;
+1|Eastern
+2|Western
+3|Northern
+4|Southern
+
+
+-- What are the cities?
+select distinc territorydescription from territories;
+Westboro
+Bedford
+Georgetow
+Boston
+Cambridge
+Braintree
+Providence
+Hollis
+Portsmouth
+Wilton
+Morristown
+Edison
+NewYork
+Mellvile
+Fairport
+Philadelphia
+Neward
+Rockville
+Greensboro
+Cary
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Louisville
+Beachwood
+Findlay
+Southfield
+Troy
+BloomfieldHills
+Racine
+Roseville
+Minneapolis
+HoffmanEstates
+Chicago
+Bentonville
+Dallas
+Austin
+Denver
+ColoradoSprings
+Phoenix
+Scottsdale
+SantaMonica
+MenloPark
+SanFrancisco
+Campbell
+SantaClara
+SantaCruz
+Bellevue
+Redmond
+Seattle
+
+
+-- What are the cities in the southern region?
+select distinct territorydescription from territories where regionid = 4;
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Bentonville
+Dallas
+Austin
+
+
+-- How do you run this query with the fully qualified column name?
+
+

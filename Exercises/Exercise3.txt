@@ -1,0 +1,15 @@
+.echo on
+.headers on
+
+--Name: Nicholas Isaacs
+--File: Exercise3.sql
+--Date: August 26, 2018
+
+
+--1
+ select od.orderid, p.productid, od.unitprice, od.quantity, od.quantity * od.unitprice as LineTotal 
+ from order_details od join products p Limit 25;
+ 
+ --2
+ 
+ select productid, productname, unitprice from products order by unitprice desc limit 10;
